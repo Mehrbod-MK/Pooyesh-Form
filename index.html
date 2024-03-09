@@ -20,7 +20,7 @@
         body
         {
             margin: 0.25%;
-            padding: 0;
+            padding: 0.3%;
 
             border: 1px solid black;
 
@@ -43,23 +43,88 @@
             font-size: 3.5em;
         }
 
+        .general-text
+        {
+            font-family: "Rubik", serif;
+            font-size: 1.5em;
+
+            line-height: 170%;
+            
+            text-align: justify;
+            text-justify: inter-word;
+
+            padding: 1%;
+        }
+
+        .general-table
+        {
+            align-self: center;
+
+            width: 100%;
+        }
+
+        .general-table tr td
+        {
+            vertical-align: top;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .list-checks
+        {
+            margin: 0 20%;
+
+            border: 2px solid black;
+            list-style-position: inside;
+        }
+
+        .general-table tr th
+        {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
-    
-    <h2 class="headings" id="besmellah">بسمه تعالی</h2>
 
-    <img src="https://upload.wikimedia.org/wikipedia/fa/3/39/Tehranshomallogo.png">
-    <img src="https://bpj.iaun.iau.ir/wp-content/uploads/2022/12/cropped-bpj_logo.png">
-    <img src="https://upload.wikimedia.org/wikipedia/fa/3/39/Tehranshomallogo.png">
+    <!-- Onvan table. -->
+    <table class="general-table">
+        <tr>
+            <td>
+                <img width="100px" height="200px" class="general-image" id="img_iautnb1" src="https://upload.wikimedia.org/wikipedia/fa/3/39/Tehranshomallogo.png">
+            </td>
+            <td>
+                <h2 class="headings" id="besmellah">بسمه تعالی</h2>
+                <img width="200px" height="200px" class="general-image" id="img_bashgah" src="https://bpj.iaun.iau.ir/wp-content/uploads/2022/12/cropped-bpj_logo.png">
+                <h1 class="headings" id="onvan">فراخوان حضور در اولین دوره طرح پویش</h1>
+            </td>
+            <td>
+                <img width="100px" height="200px" class="general-image" id="img_iautnb2" src="https://upload.wikimedia.org/wikipedia/fa/3/39/Tehranshomallogo.png">
+            </td>
+        </tr>
+    </table>
 
-    <h1 class="headings" id="onvan">فراخوان حضور در اولین دوره طرح پویش</h1>
+    <!-- Main body -->
+    <div>
+        <p class="general-text">دانشگاه آزاد اسلامی واحد تهران شمال در نظر دارد اولین دوره <strong>طرح پویش</strong>
+            با فراهم نمودن شرایط اشتغال و ارتقاء مهارت تخصصی دانشجویان از طریق توأم کردن آموزش تخصصی و مهارت و ایجاد پیوند نظام‌وند میان دانشگاه، صنعت را برگزار کند.
+            در این طرح، دانشجویان متقاضی پس از کسب حداقل مهارت‌ها و توانایی لازم برای کارآموزی جهت معرفی به ارگان یا نهاد مورد نظر گزینش می‌شوند. 
+            <i>(لیست دوره‌های مهارتی برای هر رشته به تشخیص گروه تخصصی تعیین شده است.)</i>
+        </p>
 
-    <p>دانشگاه آزاد اسلامی واحد تهران شمال در نظر دارد اولین دوره <strong>طرح پویش</strong>
-        با فراهم نمودن شرایط اشتغال و ارتقاء مهارت تخصصی دانشجویان از طریق توأم کردن آموزش تخصصی و مهارت و ایجاد پیوند نظام‌وند میان دانشگاه، صنعت را برگزار کند.
-        در این طرح، دانشجویان متقاضی پس از کسب حداقل مهارت‌ها و توانایی لازم برای کارآموزی جهت معرفی به ارگان یا نهاد مورد نظر گزینش می‌شوند. 
-        <i>(لیست دوره‌های مهارتی برای هر رشته به تشخیص گروه تخصصی تعیین شده است.)</i>
-    </p>
+        <ul class="general-text list-checks">
+            <li>ارائه گواهی رسمی شرکت در دوره توسط دانشگاه</li>
+            <li>امکان استخدام در نهاد مورد نظر پس از اتمام دوره کارشناسی.</li>
+        </ul>
+
+        <table class="general-table general-text">
+            <tr>
+                <th>مزایای طرح پویش برای دانشجویان:</th>
+                <th>مزایای طرح پویش برای بنگاه‌های اقتصادی و اجتماعی:</th>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
