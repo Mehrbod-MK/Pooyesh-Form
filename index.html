@@ -103,6 +103,11 @@
 
         }
 
+        .primitive
+        {
+            padding: 10px;
+        }
+
         .primitive-oval
         {
             height: 100px;
@@ -115,7 +120,20 @@
 
         .primitive-triangle-down
         {
-            
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 50px solid #555;
+        }
+
+        .primitive-rectangle 
+        {
+            height: auto;
+            width: auto;
+            background-color: rgba(100, 250, 100);
+
+            box-shadow: 5px 5px black;
         }
 
         .flowchart-body
@@ -126,6 +144,17 @@
             justify-content: center;
 
             text-align: center;
+
+            flex-direction: column;
+            
+            align-items: center;
+        }
+
+        .bordered-div
+        {
+            margin: 5px;
+
+            border: 5px dotted blue;
         }
 
     </style>
@@ -191,11 +220,52 @@
         </table>
     </div>
 
-    <div class="flowchart-body general-text">
-        <div class="primitive-oval">
-            <p>شروع</p>
+    <div class="general-text bordered-div">
+        <p style="font-size: 1.5em;">برای ثبت نام به لینک ذیل مراجعه فرمایید:</p>
+        <div dir="ltr">
+            <a style="font-size: 2.0em;" href="https://stuyar.ir/pooyesh" target="_blank">https://stuyar.ir/pooyesh</a>
+        </div>
+        <div>
+            <p style="font-size: 1.25em;">همچنین، می‌توانید با دوربین تلفن همراه خود، QR کد ذیل را نیز اسکن کنید:</p>
+            <img src="./qrCode_Pooyesh.png" width="200px">
         </div>
     </div>
+
+    <div style="justify-content: center;">
+        <img src="./pooyesh_flowchart.png" style="width: 1500px;">
+    </div>
+
+    <!--
+    <div class="general-text">
+        <table class="general-table">
+            <tr>
+                <td style="width: 25%;"></td>
+                <td class="flowchart-body">
+                    <div class="primitive primitive-oval">
+                        <p><b>شروع</b></p>
+                    </div>
+                    <div class="primitive-triangle-down">
+                        
+                    </div>
+
+                    <div class="primitive primitive-rectangle">
+                        <p><b>ثبت نام در طرح پویش</b></p>
+                    </div>
+                </td>
+                <td style="width: 25%;"></td>
+            </tr>
+            <tr>
+                <td style="width: 25%;"></td>
+                <td class="flowchart-body">
+                    <div class="diamond-narrow">
+                        <p><b>نیاز به آموزش؟</b></p>
+                    </div>
+                </td>
+                <td style="width: 25%;"></td>
+            </tr>
+        </table>
+    </div>
+    -->
 
 </body>
 </html>
